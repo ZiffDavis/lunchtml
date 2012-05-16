@@ -1,0 +1,6 @@
+body {text-align:center;font-family:arial;margin-top:100px;background:url('stripes.png');}
+a {font-size:32px;font-family: 'Emilys Candy', cursive;top:-100px;position:relative;color:black;text-decoration:none;}
+a:hover{color:#d30bcc;font-weight:bold;}
+h1 {font-family: 'Ribeye Marrow', cursive;font-size:40px;}
+h2 {font-family: 'Ribeye Marrow', cursive;}
+#titles {background:url('frame.png') no-repeat;display:inline-block;width:576px;height:384px;padding-top:110px;padding-left:35px;}
