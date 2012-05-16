@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>LUNCHTML 2.0 - Review: MVP Tags</title>
+    <link rel="stylesheet" type="text/css" href="style-review.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1>Tables &mdash; Attributes</h1>
+    
+    <div class="content-wrapper">
+        <h2>&lt;td colspan='<i>n</i>'&gt;</h2>
+        
+        <p>HTML:</p>
+        
+        <pre>
+        &lt;table border=&quot;1&quot;&gt;
+            &lt;tr&gt;
+                &lt;td&gt;row 1, cell 1&lt;/td&gt;
+                &lt;td&gt;row 1, cell 2&lt;/td&gt;
+                &lt;td&gt;row 1, cell 3&lt;/td&gt;
+                &lt;td&gt;row 1, cell 4&lt;/td&gt;
+                &lt;td&gt;row 1, cell 5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot;&gt;row 2, cell 1 &amp;amp; 2 (spans 2)&lt;/td&gt;
+                &lt;td&gt;row 2, cell 3&lt;/td&gt;
+                &lt;td colspan=&quot;2&quot;&gt;row 2, cell 4 &amp;amp; 5 (spans 2)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;row 3, cell 1&lt;/td&gt;
+                &lt;td colspan=&quot;4&quot;&gt;row 3, cell 2, 3, 4, 5 (spans 4)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan=&quot;5&quot;&gt;footer (spans 5)&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+        </pre>
+        
+        
+        <p>RESULT:</p>
+        
+        <table border="1">
+            <tr>
+                <td>row 1, cell 1</td>
+                <td>row 1, cell 2</td>
+                <td>row 1, cell 3</td>
+                <td>row 1, cell 4</td>
+                <td>row 1, cell 5</td>
+            </tr>
+            <tr>
+                <td colspan="2">row 2, cell 1 &amp; 2 (spans 2)</td>
+                <td>row 2, cell 3</td>
+                <td colspan="2">row 2, cell 4 &amp; 5 (spans 2)</td>
+            </tr>
+            <tr>
+                <td>row 3, cell 1</td>
+                <td colspan="4">row 3, cell 2, 3, 4, 5 (spans 4)</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="5">footer (spans 5)</td>
+                </tr>
+            </tfoot>
+        </table>
+	</div>
+
+</body>
+</html>

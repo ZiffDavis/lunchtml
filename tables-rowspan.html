@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>LUNCHTML 2.0 - Review: MVP Tags</title>
+    <link rel="stylesheet" type="text/css" href="style-review.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1>Tables &mdash; Attributes</h1>
+    
+    <div class="content-wrapper">
+        <h2>&lt;td rowspan='<i>n</i>'&gt;</h2>
+        
+        <p>HTML:</p>
+        
+        <pre>
+        &lt;table border=&quot;1&quot;&gt;
+            &lt;tr&gt;
+                &lt;th&gt;th, cell 1&lt;/th&gt;
+                &lt;th&gt;th, cell 2&lt;/th&gt;
+                &lt;th&gt;th, cell 3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td rowspan=&quot;2&quot;&gt;rows 2 &amp;amp; 3, cell 1&lt;/td&gt;
+                &lt;td&gt;row 2, cell 2&lt;/td&gt;
+                &lt;td&gt;row 2, cell 3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;row 3, cell 2&lt;/td&gt;
+                &lt;td rowspan=&quot;2&quot;&gt;rows 3 &amp;amp; 4, cell 3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;row 4, cell 1&lt;/td&gt;
+                &lt;td&gt;row 4, cell 2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </pre>
+        
+        
+        <p>RESULT:</p>
+        
+        <table border="1">
+            <tr>
+                <th>th, cell 1</th>
+                <th>th, cell 2</th>
+                <th>th, cell 3</th>
+            </tr>
+            <tr>
+                <td rowspan="2">rows 2 &amp; 3, cell 1</td>
+                <td>row 2, cell 2</td>
+                <td>row 2, cell 3</td>
+            </tr>
+            <tr>
+                <td>row 3, cell 2</td>
+                <td rowspan="2">rows 3 &amp; 4, cell 3</td>
+            </tr>
+            <tr>
+                <td>row 4, cell 1</td>
+                <td>row 4, cell 2</td>
+            </tr>
+        </table>
+	</div>
+
+</body>
+</html>
