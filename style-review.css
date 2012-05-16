@@ -1,5 +1,9 @@
-body {margin-top:10px;margin-left:20px;}
-h1 {font-family: 'Ribeye Marrow', cursive;font-size:35px;margin-bottom:5px;position:fixed;}
+body {margin:0px 20px;}
+h1 {font-family: 'Ribeye Marrow', cursive; font-size:35px;margin:0;position:fixed; padding: 10px 20px; background-color: white; border-bottom: 1px solid #ccc; width: 100%; top: 0px; }
 h2 {font-family:arial;font-size:20px;}
 hr {margin-bottom:800px;}
 #nav{margin-top:50px;font-family:arial;font-size:12px;}
+
+div.content-wrapper {
+    margin-top: 80px;
+}
