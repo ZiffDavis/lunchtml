@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>LUNCHTML 2.0 - Review: MVP Tags</title>
+<link rel="stylesheet" type="text/css" href="style-review.css" />
+<link rel="stylesheet" type="text/css" href="style-css.css" />
+<link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1>CSS Basics</h1>
+<a name="div"><br/><br/><br/><h2>divs &amp; spans</h2>
+<span id="label-span">HTML:</span>
+<pre>
+	Watch this: &lt;div id="mydiv"&gt;Hello, world.&lt;/div&gt;
+	Watch this: &lt;span id="myspan"&gt;Hello, world.&lt;/span&gt;
+</pre>
+
+
+<span id="label-span">RESULT:</span>&nbsp;&nbsp;Watch this:<div id="mydiv">Hello, world.</div>
+Watch this: <span id="myspan">Hello, world.</span>
+<div class="nav">
+<a href="#div">divs &amp; spans</a> |
+<a href="#inline">inline styles</a> |
+<a href="#style">embedded styles (&lt;style&gt; tag)</a> |
+<a href="#sheet">external styles (&lt;link&gt; tag)</a>
+</div>
+
+
+
+
+<a name="inline"><br/><br/><br/><h2>inline css</h2>
+<span id="label-span">HTML:</span>
+<pre>
+	Watch this: &lt;span style="font-weight:bold;color:red;font-style:italic;"&gt;Hello, world.&lt;/span&gt;
+</pre>
+<span id="label-span">RESULT:</span>&nbsp;&nbsp;Watch this: <span style="font-weight:bold;color:red;font-style:italic;">Hello, world.</span>
+
+<div class="nav">
+<a href="#div">divs &amp; spans</a> |
+<a href="#inline">inline styles</a> |
+<a href="#style">embedded styles (&lt;style&gt; tag)</a> |
+<a href="#sheet">external styles (&lt;link&gt; tag)</a>
+</div>
+
+
+
+<a name="style"><br/><br/><br/><h2>inline css</h2>
+<span id="label-span">HTML:</span>
+<pre>
+    &lt;style type="text/css"&gt;
+        #myspan2 {
+            font-weight: bold;
+            color: green;
+            font-style: italic;
+        }
+    &lt;/style&gt;
+    Watch this: &lt;span id="myspan2"&gt;Hello, world.&lt;/span&gt;
+</pre>
+<span id="label-span">RESULT:</span>&nbsp;&nbsp;
+	<style type="text/css">
+		#myspan2 {font-weight:bold;color:green;font-style:italic;}
+	</style>
+	Watch this: <span id="myspan2">Hello, world.</span>
+
+<div class="nav">
+<a href="#div">divs &amp; spans</a> |
+<a href="#inline">inline styles</a> |
+<a href="#style">embedded styles (&lt;style&gt; tag)</a> |
+<a href="#sheet">external styles (&lt;link&gt; tag)</a>
+</div>
+
+
+
+<a name="sheet"><br/><br/><br/><h2>inline css</h2>
+<span id="label-span">HTML:</span>
+<pre>
+	&lt;link rel="stylesheet" type="text/css" href="style-css-sheet-happens.css" /&gt;
+	Watch this: &lt;span id="myspan3"&gt;Hello, world.&lt;/span&gt;
+</pre>
+<span id="label-span">RESULT:</span>&nbsp;&nbsp;
+<link rel="stylesheet" type="text/css" href="style-css-sheet-happens.css" />
+Watch this: <span id="myspan3">Hello, world.</span>
+<br/><br/>
+<span id="label-span">THE SHEET:</span>&nbsp;&nbsp;
+<pre>
+	#myspan3 {font-weight:bold;font-style:italic;color:blue;font-size:28px;}
+</pre>
+
+<div class="nav">
+<a href="#div">divs &amp; spans</a> |
+<a href="#inline">inline styles</a> |
+<a href="#style">embedded styles (&lt;style&gt; tag)</a> |
+<a href="#sheet">external styles (&lt;link&gt; tag)</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>LUNCHTML 2.0 - Review: MVP Tags</title>
+<link rel="stylesheet" type="text/css" href="style-review.css" />
+<link rel="stylesheet" type="text/css" href="style-css.css" />
+<link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1>CSS Selectors</h1>
+<a name="native"><br/><br/><br/><h2>divs &amp; spans</h2>
+<span id="label-span">CSS:</span>
+<pre>
+	&lt;style&gt;
+		p {font-weight:bold;background-color:#f00;color:#fff;}
+	&lt;/style&gt;
+	&lt;p>Hello, world.&lt;/p&gt;
+</pre>
+
+<span id="label-span">RESULT:</span>
+<style>
+		p {font-weight:bold;background-color:#f00;color:#fff;}
+	</style>
+	<p>Hello, world.</p>
+
+<div class="nav">
+<a href="#native">native DOM elements</a> |
+<a href="#div">divs &amp; spans</a>
+</div>
+
+<a name="div"><br/><br/><br/><h2>divs &amp; spans</h2>
+<span id="label-span">CSS:</span>
+<pre>
+	&lt;style&gt;
+		#myid {font-weight:bold;background-color:#ff0;}
+		.myclass {font-weight:bold;background-color:#0ff;}
+	&lt;/style&gt;
+	&lt;div id="myid">Hello, world.&lt;/div&gt;
+	&lt;div class="myclass">Hello, world.&lt;/div&gt;
+</pre>
+
+
+<span id="label-span">RESULT:</span>
+
+<style>
+		#myid {font-weight:bold;background-color:#ff0;}
+		.myclass {font-weight:bold;background-color:#0ff;}
+</style>
+<div id="myid">Hello, world.</div>
+<div class="myclass">Hello, world.</div>
+
+
+<div class="nav">
+<a href="#native">native DOM elements</a> |
+<a href="#div">divs &amp; spans</a>
+</div>
+
+
+</body>
+</html>

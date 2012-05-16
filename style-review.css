@@ -1,8 +1,7 @@
-body {margin:0px 20px 40px 0px;}
-h1 {font-family: 'Ribeye Marrow', cursive; font-size:35px;margin:0;position:fixed; padding: 10px 20px; background-color: white; border-bottom: 1px solid #ccc; width: 100%; top: 0px; }
+body {margin: 0px 20px 40px 0px; font-family: arial, verdana, sans-serif; font-size: 14px;}
+h1 {font-family: 'Ribeye Marrow', cursive; font-size:35px;margin:0;position:fixed; padding: 6px 20px; background-color: white; border-bottom: 1px solid #ccc; width: 100%; top: 0px; }
 h2 {font-family:arial;font-size:20px;}
-hr {margin-bottom:800px;}
-#nav{margin-top:50px;font-family:arial;font-size:12px;}
+.nav{margin-top:50px; padding-bottom: 6px; margin-bottom: 800px; font-family:arial;font-size:12px; border-bottom: 1px solid #ccc;}
 
 div.content-wrapper {
     margin-top: 80px;
@@ -10,4 +9,8 @@ div.content-wrapper {
 
 table td, table th {
     padding: 4px;
+}
+
+li {
+    margin-bottom: 10px;
 }
